@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Seite</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styless.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"/>
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo">
-        <img src="logo.png" alt="Logo" />
-      </div>
-      <header class="navbar">
-        <nav class="links">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="tabelle.html">Tabelle</a></li>
-            <li><a href="geschichte.html">Geschichte</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <p>Main</p>
-      </main>
-      <footer class="footer">
-        <p>Footer</p>
-        <ul>
-          <li><a href="https://github.com/ukApollox/FCL">Source Code</a></li>
-        </ul>
-      </footer>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Seite</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styless.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
+            </div>
+            <header class="navbar">
+                <nav class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="tabelle.html">Tabelle</a></li>
+                        <li><a href="geschichte.html">Geschichte</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div id="fs-standings"></div>
+                <script>
+                    (function (w, d, s, o, f, js, fjs) {
+                        w["fsStandingsEmbed"] = o;
+                        w[o] =
+                            w[o] ||
+                            function () {
+                                (w[o].q = w[o].q || []).push(arguments);
+                            };
+                        (js = d.createElement(s)),
+                            (fjs = d.getElementsByTagName(s)[0]);
+                        js.id = o;
+                        js.src = f;
+                        js.async = 1;
+                        fjs.parentNode.insertBefore(js, fjs);
+                    })(
+                        window,
+                        document,
+                        "script",
+                        "mw",
+                        "https://cdn.footystats.org/embeds/standings.js"
+                    );
+                    mw("params", { leagueID: 12326 });
+                </script>
+                <br/>
+                <div id="fs-upcoming"></div>
+                <script>
+                    (function (w, d, s, o, f, js, fjs) {
+                        w["fsUpcomingEmbed"] = o;
+                        w[o] =
+                            w[o] ||
+                            function () {
+                                (w[o].q = w[o].q || []).push(arguments);
+                            };
+                        (js = d.createElement(s)),
+                            (fjs = d.getElementsByTagName(s)[0]);
+                        js.id = o;
+                        js.src = f;
+                        js.async = 1;
+                        fjs.parentNode.insertBefore(js, fjs);
+                    })(
+                        window,
+                        document,
+                        "script",
+                        "fsUpcoming",
+                        "https://cdn.footystats.org/embeds/upcoming.js"
+                    );
+                    fsUpcoming("params", { teamID: 890 });
+                </script>
+            </main>
+            <footer class="footer">
+                <p>Footer</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/ukApollox/FCL"
+                            >Source Code</a
+                        >
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
