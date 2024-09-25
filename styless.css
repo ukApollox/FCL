@@ -1,28 +1,69 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
-}
+  font-family: rubik;
+  }.rubik {
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-style: normal;
 
+  }
+  
 .container {
   display: grid;            
-  grid-template-columns: 100px auto 100px;
-  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 100px 700px 100px;
+  grid-template-rows: 100px 600px 100px;
   grid-template-areas: 
-    "header header header"
+    "logo header header"
     "main main main"
     "footer footer footer";
 }
 
-header {
-  grid-area: header;       
+.header, .main, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   text-align: center;
 }
 
-main {
-  grid-area: main;
+.header {
+  margin-top: 50px;
+  grid-area: header; 
+  font-size: x-large;
 }
 
-footer {
+.navbar{
+display: flex;
+align-items: center;
+}
+
+.logo {
+  grid-area: logo; 
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 150px;
+  
+ height: 150px;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
+li a{
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.main {
+  grid-area: main;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
   grid-area: footer;
 }
