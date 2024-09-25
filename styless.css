@@ -74,6 +74,7 @@ li a {
   margin-right: 100px;
 }
 .nextgame {
+  grid-area: nextGame;
   background-color: #1E467D; 
 }
 #fs-upcoming{
