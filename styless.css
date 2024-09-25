@@ -86,6 +86,7 @@ article {
   margin: 0 auto;
   padding: 20px;
   text-align: justify;
+  font-size: xx-large;
 }
 .footer {
   grid-area: footer;
