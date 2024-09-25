@@ -1,61 +1,76 @@
 body {
-  background-color: #f4f4f4;
+  background-color: white;
   font-family: rubik;
-  }.rubik {
-    font-family: "Rubik", sans-serif;
-    font-weight: normal;
-    font-style: normal;
+  margin: 0; 
+  padding: 0; 
+  width: 100%;
+  height: 100%;
+}
 
-  }
-  
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
-  display: grid;            
-  grid-template-columns: 100px 700px 100px;
-  grid-template-rows: 100px 600px 100px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 150px auto  auto;
+  grid-template-rows: 150px auto 150px;
   grid-template-areas: 
     "logo header header"
     "main main main"
     "footer footer footer";
 }
-
-.header, .main, .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
-}
-
-.header {
-  margin-top: 50px;
-  grid-area: header; 
-  font-size: x-large;
-}
-
-.navbar{
-display: flex;
-align-items: center;
-}
-
 .logo {
   grid-area: logo; 
   display: flex;
   justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 .logo img {
   width: 150px;
-  
- height: 150px;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
-li{
+.navbar, .main, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logo, .navbar{
+  background-color: #1E467D;
+}
+.navbar {
+  grid-area: header;
+  font-size: x-large;
+}
+.links {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+}
+.links ul{
+  display: flex; 
+  justify-content: center;
+ }
+
+li {
   list-style: none;
   display: inline-block;
 }
-li a{
-  color: black;
+
+li a {
+  color: white;
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 100px;
 }
 
 .main {
@@ -67,3 +82,13 @@ li a{
 .footer {
   grid-area: footer;
 }
+
+article {
+  border: 1px; /* Define the border properly */
+  padding: 5px;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto; /* Centers the article element itself */
+  text-align: justify; /* Justifies the text inside the article */
+}
+
