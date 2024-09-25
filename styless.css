@@ -88,6 +88,22 @@ article {
   text-align: justify;
   font-size: xx-large;
 }
+
+#fs-standings {
+  width: 100%;
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Ermöglicht Scrollen, falls der Inhalt zu groß ist */
+  max-height: 80vh; /* Begrenzung der maximalen Höhe auf 80% der Bildschirmhöhe */
+  text-align: justify;
+}
+
+
 .footer {
   grid-area: footer;
 }
