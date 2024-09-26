@@ -186,10 +186,20 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.formtext {
+  text-align: justify;  
+}
+
+
 label {
   display: block;
   margin: 10px 0 5px;
   font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
 }
 
 input[type="text"],
@@ -202,12 +212,9 @@ textarea {
   box-sizing: border-box;
 }
 
-textarea {
-  height: 100px;
-}
-
 input[type="checkbox"] {
   margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 input[type="submit"] {
