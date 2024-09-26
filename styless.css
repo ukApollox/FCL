@@ -39,11 +39,11 @@ body {
 }
 
 .logo img {
-  width: 150px;
-  height: 150px;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  width: 175px;
+  height: 175px;
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-bottom: 5px;
 }
 .navbar, .main{
   display: flex;
