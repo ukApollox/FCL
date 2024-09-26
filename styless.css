@@ -224,3 +224,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #4cae4c;
 }
+
+.hero-banner{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+.hero-banner img{
+  width: 100%;
+  height: 100%;
+}
