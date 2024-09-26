@@ -1,6 +1,7 @@
 html {
   height: 100%;
   margin: 0; 
+  box-sizing: border-box;
 }
 body {
   background-color: white;
@@ -23,7 +24,7 @@ body {
   width: 100%;
   height: 100%;
   flex-grow: 1;
-  grid-template-columns: 150px auto 400px;
+  grid-template-columns: 150px 1fr  400px;
   grid-template-rows: 200px auto 200px;
   grid-template-areas: 
     "logo header header"
@@ -138,16 +139,15 @@ hr{
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.flex-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Karten pro Reihe */
-  gap: 20px; /* Abstand zwischen den Karten */
-  justify-items: center; /* Zentriert die Karten innerhalb des Grids */
-  width: 100%; /* Nimmt die gesamte Breite des Containers ein */
-  max-width: 1200px; /* Maximalbreite für das Grid */
+ .flex-container {
+  margin-top: 40px;
+  display: flex;
   grid-area: main;
-}
-
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content:flex-start;
+  
+ }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -163,6 +163,10 @@ hr{
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img {
+  width: 310px;
+  height: 500px;
 }
 
 
