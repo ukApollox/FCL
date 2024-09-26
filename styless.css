@@ -22,10 +22,11 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
+  flex-grow: 1;
   grid-template-columns: 150px auto 400px;
   grid-template-rows: 200px auto 200px;
   grid-template-areas: 
-    "logo header nextGame"
+    "logo header header"
     "main main sidebar"
     "footer footer footer";
 }
@@ -73,18 +74,23 @@ li {
   display: inline-block;
 }
 
-li a {
+ .links li a {
   color: white;
   text-decoration: none;
   margin-right: 100px;
 }
 .nextgame {
-  grid-area: nextGame;
-  background-color: #1E467D; 
+  grid-area: sidebar;
+}
+.nextgameH1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #fs-upcoming{
 margin-top: 20px;
 margin-right: 20px;
+width: 100%;
 }
 
 .main {
@@ -117,8 +123,6 @@ article {
   max-height: 80vh; /* Begrenzung der maximalen Höhe auf 80% der Bildschirmhöhe */
   text-align: justify;
 }
-
-
 .footer {
   grid-area: footer;
   background-color: #34383F;
@@ -132,11 +136,15 @@ article {
   margin-bottom: 50px;
 }
 aside{
-  grid-area: sidebar;
-  background-color: grey;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+hr{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
 .flex-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 Karten pro Reihe */
