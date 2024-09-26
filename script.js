@@ -20,6 +20,10 @@
   );
   mw("params", {
     leagueID: 12326,
-    showAllTeams: true, // Zeigt alle Teams an
-    showPoints: true, // Zeigt Punkte an
+    showAllTeams: true, 
+    showPoints: true, 
   });
+
+  function openLink() {
+    window.location.href = "kontakt.html"; 
+}
