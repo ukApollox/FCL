@@ -124,7 +124,15 @@ article {
 }
 .footer {
   grid-area: footer;
-  background-color: #34383F;
+  background-color: #f1f1f1; 
+  padding: 20px; 
+  display: flex; 
+  justify-content: space-around;
+}
+.footer-content{
+  flex: 1; 
+  text-align: center; 
+  margin: 10px;
 }
 aside{
   display: flex;
