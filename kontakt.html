@@ -18,7 +18,7 @@
   <div class="container">
     <div class="logo">
       <a href="index.html"></a>
-      <img src="logo.png" alt="Logo" />
+      <img src="logo-h.png" alt="Logo" />
     </div>
     <header class="navbar">
       <nav class="links">
@@ -35,27 +35,27 @@
         <div id="fs-upcoming"></div> <script> (function (w,d,s,o,f,js,fjs) { w['fsUpcomingEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'fsUpcoming', 'https://cdn.footystats.org/embeds/upcoming.js')); fsUpcoming('params', { teamID: 890 }); </script>
       </nav>
       <main class="main">
-        <div class="containerfrom">
+        <div class="containerform">
             <h1>Kontaktformular</h1>
-            <form action="/deine-server-url" method="post">
-                <label for="name">Name:</label>
+            <form action="formlog.offline.ch" method="post">
+                <label for="name" class="formtext">Name:</label>
                 <input type="text" id="name" name="name" required>
     
-                <label for="email">E-Mail:</label>
+                <label for="email" class="formtext">E-Mail:</label>
                 <input type="email" id="email" name="email" required>
     
-                <label for="nachricht">Nachricht:</label>
-                <textarea id="nachricht" name="nachricht" required></textarea>
+                <label for="nachricht" class="formtext">Nachricht:</label>
+                <textarea id="nachricht" required maxlength="400"></textarea>
 
-                <input type="checkbox" id="datenschutz" name="datenschutz" required>
                 <label for="datenschutz">Ich akzeptiere die Datenschutzbestimmungen.</label>
+                <input type="checkbox" id="datenschutz" name="datenschutz" required>
                 <br>
                 <input type="submit" value="Absenden">
             </form>
         </div>
     </main>
       <footer class="footer">
-        <img src="logo.png" alt="Logo">
+        <img src="logo-f.png" alt="Logo">
       </footer>
     </div>
     <script src="script.js"></script>
