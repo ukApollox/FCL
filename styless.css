@@ -254,3 +254,14 @@ input[type="submit"]:hover {
   font-size: 50px;
   color: white; 
 }
+
+.hero-text a {
+  color: white; /* Make anchor text white */
+  text-decoration: none; /* Remove underline if desired */
+}
+.stadion {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+
+}
