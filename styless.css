@@ -92,13 +92,11 @@ margin-top: 20px;
 margin-right: 20px;
 width: 100%;
 }
-
 .main {
   grid-area: main;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 article {
@@ -232,12 +230,32 @@ input[type="submit"]:hover {
   background-color: #4cae4c;
 }
 
-.hero-banner{
+.hero-banner {
   grid-area: main;
   display: flex;
   flex-direction: column;
-}
-.hero-banner img{
   width: 100%;
   height: 100%;
+  position: relative; 
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-text {
+  position: absolute; 
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  color: white; 
 }
