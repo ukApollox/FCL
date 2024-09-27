@@ -37,7 +37,6 @@ body {
     justify-content: center;
     text-align: center;
 }
-.logo,
 .navbar {
     background-color: #1e467d;
 }
@@ -45,37 +44,23 @@ body {
     grid-area: header;
     font-size: x-large;
 }
-.links {
+.ul-links {
+  grid-area: header;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 10px;
 }
 .links li img {
     width: 100px;
     height: 100px;
 }
-.links ul {
-    display: flex;
-    justify-content: center;
-}
-
-.links li {
-    list-style: none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
 .links li a {
     color: white;
     text-decoration: none;
-    margin-right: 100px;
 }
-.links li:first-child {
-    margin-right: auto;
-}
-
 .nextgameH1 {
     display: flex;
     align-items: center;
@@ -308,18 +293,7 @@ input[type="submit"]:hover {
     font-size: large;
     text-align: center;
 }
-
-.links li {
-    margin-right: 20px;
-}
-
-.links ul {
-    flex-direction: column;
-    align-items: center;
-}
-   }
-
-    .nextgame {
+ .nextgame {
         margin: 0;
         width: 100%;
     }
@@ -356,6 +330,7 @@ input[type="submit"]:hover {
         width: 100%;
         height: auto;
     } 
+  }
 
 @media (max-width: 873px) {
   .container {
@@ -370,8 +345,15 @@ input[type="submit"]:hover {
         "footer";
 }
 }
-@media (max-width: 480px) {
-    .hero-text {
+@media (max-width: 755px) {
+  .ul-links {
+      flex-direction: column;
+      
+  }
+  .ul-links li{
+    margin-bottom: 10px;
+  }
+  .hero-text {
         font-size: 18px;
     }
 
