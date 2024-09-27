@@ -80,15 +80,15 @@ body {
 article {
     width: 100%;
     max-width: 1500px;
-    margin: 0 auto;
     padding: 20px;
     text-align: justify;
-    font-size: xx-large;
+    font-size: large;
+    margin-right: 20px;
+    margin-left: 60px;
+
 }
 
 #fs-standings {
-    width: 100%;
-    max-width: 1500px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -97,6 +97,8 @@ article {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-height: 80vh;
     text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .footer {
     grid-area: footer;
@@ -115,9 +117,11 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 20px;
 }
 aside li {
     list-style: none;
+    display: flex;
     margin-bottom: 20px;
 }
 .Event1,
@@ -375,5 +379,8 @@ input[type="submit"]:hover {
 
     .navbar {
         font-size: medium;
+    }
+    article{
+      margin-left: 20px;
     }
 } 
