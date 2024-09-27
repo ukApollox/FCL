@@ -348,6 +348,8 @@ input[type="submit"]:hover {
 @media (max-width: 755px) {
   .ul-links {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       
   }
   .ul-links li{
