@@ -128,8 +128,18 @@ aside li {
   margin-bottom: 20px;
 }
 hr {
+    width: 100%;
+}
+
+.hr-sidebar {
     width: 60%;
 }
+
+.nachstes-spiel {
+    text-align: center;
+    margin-left: 45%;
+}
+
 .flex-container {
     margin-top: 40px;
     display: flex;
