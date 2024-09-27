@@ -211,7 +211,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background-color: #5cb85c;
+    background-color: #1e467d;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -222,7 +222,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #3b81e4;
 }
 
 .hero-banner {
