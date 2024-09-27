@@ -45,7 +45,7 @@ body {
     font-size: x-large;
 }
 .ul-links {
-  grid-area: header;
+    grid-area: header;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,7 +85,6 @@ article {
     font-size: large;
     margin-right: 20px;
     margin-left: 60px;
-
 }
 
 #fs-standings {
@@ -119,19 +118,17 @@ aside {
     align-items: center;
     margin-right: 20px;
 }
-aside li {
-    list-style: none;
-    display: flex;
-    margin-bottom: 20px;
-}
 .Event1,
 .Event2 {
     margin-bottom: 50px;
 }
+aside li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 20px;
+}
 hr {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    width: 60%;
 }
 .flex-container {
     margin-top: 40px;
@@ -290,15 +287,14 @@ input[type="submit"]:hover {
             "main sidebar"
             "footer footer";
     }
-   .nextgame{
-    margin-right: 5px;
-  
-   }
-   .navbar {
-    font-size: large;
-    text-align: center;
-}
- .nextgame {
+    .nextgame {
+        margin-right: 5px;
+    }
+    .navbar {
+        font-size: large;
+        text-align: center;
+    }
+    .nextgame {
         margin: 0;
         width: 100%;
     }
@@ -334,33 +330,32 @@ input[type="submit"]:hover {
     .card img {
         width: 100%;
         height: auto;
-    } 
-  }
+    }
+}
 
 @media (max-width: 873px) {
-  .container {
-    max-width: 100%;
-    width: 100%;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "sidebar"
-        "footer";
-}
+    .container {
+        max-width: 100%;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
 }
 @media (max-width: 755px) {
-  .ul-links {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      
-  }
-  .ul-links li{
-    margin-bottom: 10px;
-  }
-  .hero-text {
+    .ul-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ul-links li {
+        margin-bottom: 10px;
+    }
+    .hero-text {
         font-size: 18px;
     }
 
@@ -380,7 +375,7 @@ input[type="submit"]:hover {
     .navbar {
         font-size: medium;
     }
-    article{
-      margin-left: 20px;
+    article {
+        margin-left: 20px;
     }
-} 
+}
