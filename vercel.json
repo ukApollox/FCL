@@ -1,0 +1,61 @@
+{
+    "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/home",
+        "permanent": true
+      },
+      {
+        "source": "/club.html",
+        "destination": "/club",
+        "permanent": true
+      },
+      {
+        "source": "/kontakt.html",
+        "destination": "/kontakt",
+        "permanent": true
+      },
+      {
+        "source": "/tabelle.html",
+        "destination": "/tabelle",
+        "permanent": true
+      },
+      {
+        "source": "/team.html",
+        "destination": "/team",
+        "permanent": true
+      },
+      {
+        "source": "/tickets.html",
+        "destination": "/tickets",
+        "permanent": true
+      }
+      
+    ],
+    "rewrites": [
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/club",
+        "destination": "/club.html"
+      },
+      {
+        "source": "/kontakt",
+        "destination": "/kontakt.html"
+      },
+      {
+        "source": "/tabelle",
+        "destination": "/tabelle.html"
+      },
+      {
+        "source": "/team",
+        "destination": "/team.html"
+      },
+      {
+        "source": "/tickets",
+        "destination": "/tickets.html"
+      }
+    ]
+  }
